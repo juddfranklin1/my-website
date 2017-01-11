@@ -1,1 +1,5 @@
-Welcome to my personal website. I am running a local git repo for now so that I can keep track of my changes, but there are no remotes, so it's really just a change tracking technique and not ready for code sharing yet.
+#Welcome to my personal website.
+
+I just made this repo public, so there's not a ton here, but enjoy it for what it's worth.
+
+Eventually, this will house my blog, code samples, etc.
