@@ -1,0 +1,76 @@
+/* Coolors Exported Palette - coolors.co/bb4430-7ebdc2-f3dfa2-efe6dd-4e0110 */
+/* HSL */
+/* RGB */
+html,
+body {
+  overflow-x: hidden; }
+
+body {
+  padding-top: 5rem;
+  font-family: "Source Serif Pro", serif;
+  max-width: 1024px;
+  margin: 0 auto;
+  color: #210c08; }
+  body a {
+    color: #efe6dd; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Archivo Black", sans-serif; }
+
+nav.navbar.navbar-master {
+  background: #4e0110; }
+  nav.navbar.navbar-master a {
+    color: #efe6dd; }
+
+.banner-block {
+  padding: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: url(../../img/cropped-crystal-tracks-color2.jpg) no-repeat #7ebdc2; }
+
+.list-group .list-group-item {
+  border-color: #f3dfa2;
+  color: #7ebdc2; }
+  .list-group .list-group-item.active {
+    background-color: #210c08;
+    color: #efe6dd; }
+    .list-group .list-group-item.active:hover {
+      border-color: #f3dfa2; }
+
+footer {
+  padding: 30px 0; }
+
+/* Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+
+  .row-offcanvas-right {
+    right: 0; }
+
+  .row-offcanvas-left {
+    left: 0; }
+
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%; }
+
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -50%; }
+
+  .row-offcanvas-right.active {
+    right: 50%; }
+
+  .row-offcanvas-left.active {
+    left: 50%; }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; } }
+
+/*# sourceMappingURL=app-sass.css.map */
