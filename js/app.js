@@ -2,10 +2,12 @@ $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
     $('.row-offcanvas').toggleClass('active');
   });
-  $('.list-group-item').click(function(e){
-    $('.list-group-item').removeClass('active');
-    $(this).addClass('active');
-    $('[data-toggle="offcanvas"]').click();
+  $('.nav-item').click(function(e){
+    $('.nav-link').removeClass('active');
+    $(this).find('.nav-link').addClass('active');
+    if ($(window).width() < 768){
+      $('[data-toggle="offcanvas"]').click();
+    }
   });
 });
 
@@ -14,12 +16,11 @@ $(window).scroll(function () {
     if (scrollTimer) {
         clearTimeout(scrollTimer);   // clear any previous pending timer
     }
-    scrollTimer = setTimeout(handleScroll, 100);   // set new timer    
+    scrollTimer = setTimeout(handleScroll, 100);   // set new timer
 });
 
 var handleScroll = function(){
   var topOffset = $('#top').offset();
-  console.log(topOffset);
   if ($(window).scrollTop() > topOffset.top+140){
     $('.sidebar-offcanvas').addClass('sticky');
     $('.main-content-column').removeClass('pull-md-3');

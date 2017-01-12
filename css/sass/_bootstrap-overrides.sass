@@ -1,11 +1,12 @@
 html,
 body
   overflow-x: hidden /* Prevent scroll on narrow devices */
-
 body
+  height: 100%
   padding-top: 6rem
   font-family: 'Source Serif Pro', serif
   margin: 0 auto
+  position: relative
   color: $color1
   a
     color: $color2
@@ -26,16 +27,32 @@ nav.navbar.navbar-master
   border: 0
   border-radius: 0
 
+.main-content-column
+  position: relative
+  overflow: auto
+
 // List Styles
-.list-group
-  .list-group-item
-    border-color: $color3
+#skills-nav
+  border-top: 1px solid $color3
+  .nav-item
+    border: 1px solid $color3
+    border-top: 0
     border-radius: 0
-    &.active
+    padding: 0
+    background-color: #fff
+    &.active, &.active:focus, &.active:hover
+      background-color: $color1
+      border-color: $color3
+      a
+        color: $color4
+    a
+      padding: 15px
+      display: block
+    .active
       background-color: $color1
       color: $color4
       &:hover
-        border-color: $color3
+        border-color: $color1
     color: $color2
 
 // Footer Styles
