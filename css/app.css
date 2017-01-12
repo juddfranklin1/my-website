@@ -100,11 +100,13 @@ article#overview .anchor-wrapper {
     .row-offcanvas-right.active .sticky {
       position: fixed;
       right: 0;
-      top: 7rem; }
+      top: 7rem;
+      padding: 0 0 0 0; }
 
   .row-offcanvas-right .sidebar-offcanvas {
     right: -50%;
-    top: 0; }
+    top: 0;
+    margin: 0 15px 0 0; }
 
   .row-offcanvas-right.active {
     right: 50%; }
@@ -112,7 +114,7 @@ article#overview .anchor-wrapper {
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 50%; }
+    width: 40%; }
 
   .btn[data-toggle=offcanvas] {
     background: #efe6dd;
@@ -126,7 +128,6 @@ article#overview .anchor-wrapper {
   right: 0; }
   .row-offcanvas-right .sticky {
     left: auto;
-    padding: 0 30px 0 0;
-    right: 15px; }
+    padding: 0 15px 0 0; }
 
 /*# sourceMappingURL=app.css.map */
