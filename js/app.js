@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
     $('.row-offcanvas').toggleClass('active');
+    $('.section-content').toggleClass('pull-xs-6');
   });
   $('.nav-item').click(function(e){
     $('.nav-link').removeClass('active');
@@ -16,7 +17,7 @@ $(window).scroll(function () {
     if (scrollTimer) {
         clearTimeout(scrollTimer);   // clear any previous pending timer
     }
-    scrollTimer = setTimeout(handleScroll, 100);   // set new timer
+    scrollTimer = setTimeout(handleScroll, 25);   // set new timer
 });
 
 var handleScroll = function(){
