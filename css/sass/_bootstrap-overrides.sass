@@ -4,28 +4,46 @@ body
 body
   height: 100%
   padding-top: 6rem
-  font-family: 'Source Serif Pro', serif
+  font-family: 'Work Sans', sans-serif
+  font-size: 15px
+  line-height: 1.5em
   margin: 0 auto
   position: relative
   color: $color1
+  // Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233
+  background: rgb(252,255,244)//Old browsers
+  background: -moz-linear-gradient(-45deg,  rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%)//FF3.6-15
+  background: -webkit-linear-gradient(-45deg,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%)//Chrome10-25,Safari5.1-6
+  background: linear-gradient(135deg,  rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%)//W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 )//IE6-9 fallback on horizontal gradient
   a
     color: $color2
 
 h1,h2,h3,h4,h5,h6
-  font-family: 'Archivo Black', sans-serif
+  font-family: 'Libre Baskerville', serif
+  margin-bottom: 1em
 
 nav.navbar.navbar-master
   background: $color5
   a
     color: $color4
+  .navbar-brand
+    font-family: 'Libre Baskerville', serif
+    line-height: 1.3em
 
 .banner-block
   padding: 4rem
   margin-bottom: 1rem
   text-align: center
-  background: url(../img/cropped-crystal-tracks-color2.jpg) no-repeat $color2
   border: 0
   border-radius: 0
+  color: #fff
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%), url(../img/person-apple-laptop-notebook.jpg)
+  background-size: cover
+  background-position: center center
+  @media screen and (min-width: 1025px)
+    padding: 12rem
+
 
 .main-content-column
   position: relative
