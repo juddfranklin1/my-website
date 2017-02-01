@@ -22,7 +22,7 @@ $(window).scroll(function () {
 
 var handleScroll = function(){
   var topOffset = $('#top').offset();
-  if ($(window).scrollTop() > topOffset.top+140){
+  if ($(window).scrollTop() > topOffset.top+300){
     $('.sidebar-offcanvas').addClass('sticky');
     $('.main-content-column').removeClass('pull-md-3');
   } else {
