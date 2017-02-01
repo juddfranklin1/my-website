@@ -26,9 +26,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Libre Baskerville", serif;
   margin-bottom: 1em; }
 
+h5 {
+  line-height: 1.5em; }
+
 nav.navbar.navbar-master {
   background: #4e0110;
-  height: 3rem; }
+  min-height: 3rem; }
   nav.navbar.navbar-master a {
     color: #efe6dd; }
   nav.navbar.navbar-master .navbar-brand {
@@ -42,7 +45,7 @@ nav.navbar.navbar-master {
   border: 0;
   border-radius: 0;
   color: #fff;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, transparent 100%), url(../img/person-apple-laptop-notebook.jpg);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, transparent 100%), url(../img/a-silhouette-at-sunset-wide.jpg);
   background-size: cover;
   background-position: center center; }
   @media screen and (min-width: 1025px) {
@@ -158,5 +161,12 @@ article#overview .anchor-wrapper {
     left: auto;
     right: 0;
     padding: 0 15px 0 0; }
+    @media screen and (max-width: 991px) {
+      .row-offcanvas-right .sticky {
+        right: -50%; } }
+
+.mobile-button-wrap {
+  margin-top: -0.9rem;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=app.css.map */
