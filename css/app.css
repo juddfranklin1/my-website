@@ -45,12 +45,15 @@ nav.navbar.navbar-master {
   border: 0;
   border-radius: 0;
   color: #fff;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, transparent 100%), url(../img/a-silhouette-at-sunset-wide.jpg);
+  background: radial-gradient(ellipse at center, rgba(150, 1, 16, 0.65) 0%, rgba(78, 1, 16, 0) 100%), url(../img/a-silhouette-at-sunset-wide.jpg);
   background-size: cover;
   background-position: center center; }
   @media screen and (min-width: 1025px) {
     .banner-block {
       padding: 12rem; } }
+
+.main-section {
+  margin-top: 30px; }
 
 .main-content-column {
   position: relative;
@@ -168,5 +171,8 @@ article#overview .anchor-wrapper {
 .mobile-button-wrap {
   margin-top: -0.9rem;
   margin-bottom: 0; }
+
+.sidebar-offcanvas {
+  transition: right 2s; }
 
 /*# sourceMappingURL=app.css.map */
