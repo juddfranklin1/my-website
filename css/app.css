@@ -26,8 +26,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Libre Baskerville", serif;
   margin-bottom: 1em; }
 
+h3 {
+  line-height: 2.5rem; }
+
 h5 {
-  line-height: 1.5em; }
+  line-height: 1.5rem; }
 
 nav.navbar.navbar-master {
   background: #4e0110;
@@ -90,7 +93,7 @@ footer {
     margin-bottom: 0; }
 
 article {
-  padding-bottom: 4rem;
+  padding: 0 15px 4rem;
   border-bottom: 1px dashed #f3dfa2; }
 
 .anchor-wrapper {
@@ -113,7 +116,7 @@ article#overview .anchor-wrapper {
   list-style-type: none;
   padding: 0.3rem 0; }
 
-[class^="devicon-"]:before {
+.devicons:before {
   font-size: 2rem;
   color: #7ebdc2;
   line-height: 2rem;
@@ -164,7 +167,7 @@ article#overview .anchor-wrapper {
     left: auto;
     right: 0;
     padding: 0 15px 0 0; }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
       .row-offcanvas-right .sticky {
         right: -50%; } }
 
@@ -174,5 +177,48 @@ article#overview .anchor-wrapper {
 
 .sidebar-offcanvas {
   transition: right 2s; }
+
+@-webkit-keyframes target {
+  0% {
+    background: transparent; }
+  50% {
+    background: #7ebdc2; }
+  100% {
+    background: transparent; } }
+@-moz-keyframes target {
+  0% {
+    background: transparent; }
+  50% {
+    background: #7ebdc2; }
+  100% {
+    background: transparent; } }
+@-ms-keyframes target {
+  0% {
+    background: transparent; }
+  50% {
+    background: #7ebdc2; }
+  100% {
+    background: transparent; } }
+@-o-keyframes target {
+  0% {
+    background: transparent; }
+  50% {
+    background: #7ebdc2; }
+  100% {
+    background: transparent; } }
+@keyframes target {
+  0% {
+    background: transparent; }
+  50% {
+    background: #7ebdc2; }
+  100% {
+    background: transparent; } }
+article:target,
+article.js-targeted {
+  -webkit-animation: target 1s 1 linear;
+  -moz-animation: target 1s 1 linear;
+  -ms-animation: target 1s 1 linear;
+  -o-animation: target 1s 1 linear;
+  animation: target 1s 1 linear; }
 
 /*# sourceMappingURL=app.css.map */

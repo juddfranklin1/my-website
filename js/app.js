@@ -4,10 +4,12 @@ function animationSpeedByDistance (currentOffset,destinationOffset){
 }
 
 $(document).ready(function () {
+
   $('[data-toggle="offcanvas"]').click(function () {
     $('.row-offcanvas').toggleClass('active');
     $('.section-content').toggleClass('pull-xs-6');
   });
+
   $('.nav-item').click(function(e){
     $('.nav-link').removeClass('active');
     $(this).find('.nav-link').addClass('active');
@@ -15,15 +17,18 @@ $(document).ready(function () {
       $('[data-toggle="offcanvas"]').click();
     }
   });
+
   $('a[href^="#"]').click(function(e){
-    var linkNumber = $(this).index('a[href^="#"]');
     var destination = $(this)[0].hash.substring(1);
     var destinationOffset = $(this).offset().top;
     var currentOffset = $(window).scrollTop();
 
     $('html,body').animate({
-      scrollTop: $("#"+destination).offset().top
-    }, animationSpeedByDistance(currentOffset,destinationOffset));
+      scrollTop: $("#"+destination).offset().top - 30
+    }, animationSpeedByDistance(currentOffset,destinationOffset),'swing',function(){
+        $('article').removeClass('js-targeted');
+        $('article#' + destination).addClass('js-targeted');
+    });
     return false;
   });
 });
@@ -37,8 +42,9 @@ $(window).scroll(function () {
 });
 
 var handleScroll = function(){
+  /* potentially use this https://github.com/leafo/sticky-kit/issues */
   var topOffset = $('#top').offset();
-  if ($(window).scrollTop() > topOffset.top+300){
+  if ($(window).scrollTop() > $('.banner-block').outerHeight() + 30){
     /* Toggle on "transition" class
      * animate via css3 transitions
      * then callback that toggles "transition" off and "sticky" on.
