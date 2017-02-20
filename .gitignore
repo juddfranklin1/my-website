@@ -8,3 +8,5 @@ npm-debug.log
 dump.rdb
 .sass-cache/*
 css/.sass-cache/*
+css/app.css.map
+css/config.rb
