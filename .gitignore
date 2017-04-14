@@ -10,3 +10,4 @@ dump.rdb
 css/.sass-cache/*
 css/app.css.map
 css/config.rb
+blog/

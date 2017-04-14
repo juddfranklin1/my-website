@@ -1,0 +1,355 @@
+/* Coolors Exported Palette - coolors.co/bb4430-7ebdc2-f3dfa2-efe6dd-4e0110 */
+/* HSL */
+/* RGB */
+/* line 1, sass/_bootstrap-overrides.sass */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* line 5, sass/_bootstrap-overrides.sass */
+html body {
+  height: 100%;
+  padding-top: 3rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin: 0 auto;
+  position: relative;
+  color: #210c08;
+  background: #fcfff4;
+  background: -moz-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -webkit-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(135deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 );
+}
+/* line 20, sass/_bootstrap-overrides.sass */
+html body a {
+  color: #7ebdc2;
+}
+/* line 22, sass/_bootstrap-overrides.sass */
+html body a.alt-link {
+  color: #4e0110;
+}
+
+/* line 25, sass/_bootstrap-overrides.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 1em;
+}
+
+/* line 29, sass/_bootstrap-overrides.sass */
+h3 {
+  line-height: 2.5rem;
+}
+
+/* line 32, sass/_bootstrap-overrides.sass */
+h5 {
+  line-height: 1.5rem;
+}
+
+/* line 35, sass/_bootstrap-overrides.sass */
+nav.navbar.navbar-master {
+  background: #4e0110;
+  min-height: 3rem;
+}
+/* line 38, sass/_bootstrap-overrides.sass */
+nav.navbar.navbar-master a {
+  color: #efe6dd;
+}
+/* line 40, sass/_bootstrap-overrides.sass */
+nav.navbar.navbar-master .navbar-brand {
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.3em;
+}
+
+/* line 44, sass/_bootstrap-overrides.sass */
+.banner-block {
+  padding: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  background: radial-gradient(ellipse at center, rgba(150, 1, 16, 0.65) 0%, rgba(78, 1, 16, 0) 100%), url(../img/a-silhouette-at-sunset-wide.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (min-width: 1025px) {
+  /* line 44, sass/_bootstrap-overrides.sass */
+  .banner-block {
+    padding: 12rem;
+  }
+}
+
+/* line 57, sass/_bootstrap-overrides.sass */
+.main-section {
+  margin-top: 30px;
+}
+
+/* line 60, sass/_bootstrap-overrides.sass */
+.main-content-column {
+  position: relative;
+  overflow: auto;
+}
+
+/* line 65, sass/_bootstrap-overrides.sass */
+#skills-nav {
+  border-top: 1px solid #f3dfa2;
+}
+/* line 67, sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item {
+  border: 1px solid #f3dfa2;
+  border-top: 0;
+  border-radius: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #7ebdc2;
+}
+/* line 73, sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item.active, #skills-nav .nav-item.active:focus, #skills-nav .nav-item.active:hover {
+  background-color: #210c08;
+  border-color: #f3dfa2;
+}
+/* line 76, sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item.active a, #skills-nav .nav-item.active:focus a, #skills-nav .nav-item.active:hover a {
+  color: #efe6dd;
+}
+/* line 78, sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item a {
+  padding: 15px;
+  display: block;
+}
+/* line 81, sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item .active {
+  background-color: #210c08;
+  color: #efe6dd;
+}
+/* line 84, sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item .active:hover {
+  border-color: #210c08;
+}
+
+/* line 89, sass/_bootstrap-overrides.sass */
+footer {
+  padding: 30px 0;
+  background: #4e0110;
+  color: #efe6dd;
+}
+/* line 93, sass/_bootstrap-overrides.sass */
+footer p {
+  margin-bottom: 0;
+}
+
+/* line 97, sass/_bootstrap-overrides.sass */
+article {
+  padding: 0 15px 4rem;
+  border-bottom: 1px dashed #f3dfa2;
+}
+
+/* line 101, sass/_bootstrap-overrides.sass */
+.anchor-wrapper {
+  padding-top: 4rem;
+}
+@media screen and (max-width: 768px) {
+  /* line 101, sass/_bootstrap-overrides.sass */
+  .anchor-wrapper {
+    padding-top: 8rem;
+  }
+}
+
+/* line 106, sass/_bootstrap-overrides.sass */
+article#overview .anchor-wrapper {
+  padding-top: 0;
+}
+
+/* line 109, sass/_bootstrap-overrides.sass */
+#contact article {
+  border-bottom: 0;
+}
+
+/* line 113, sass/_bootstrap-overrides.sass */
+.sticky {
+  position: fixed;
+  top: 6rem;
+}
+
+/* line 117, sass/_bootstrap-overrides.sass */
+.card-content li {
+  list-style-type: none;
+  padding: 0.3rem 0;
+}
+
+/* line 121, sass/_bootstrap-overrides.sass */
+.devicons:before {
+  font-size: 2rem;
+  color: #7ebdc2;
+  line-height: 2rem;
+  vertical-align: middle;
+}
+
+/* line 1, sass/_eventful.sass */
+#eventful-root {
+  border-color: #7ebdc2;
+  background: #f3dfa2;
+  position: absolute;
+  top: 50px;
+}
+/* line 6, sass/_eventful.sass */
+#eventful-root .eventfulToggleTab {
+  box-sizing: content-box;
+}
+/* line 8, sass/_eventful.sass */
+#eventful-root .eventfulOther {
+  color: green;
+}
+
+/* Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  /* line 6, sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  /* line 12, sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right {
+    right: 0;
+  }
+  /* line 15, sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right.active .sticky {
+    position: fixed;
+    right: 0;
+    top: 7rem;
+    padding: 0 0 0 0;
+  }
+
+  /* line 21, sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%;
+    top: 0;
+    margin: 0 15px 0 0;
+  }
+
+  /* line 25, sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right.active {
+    right: 50%;
+  }
+
+  /* line 28, sass/_bootstrap-mobile-navigation.sass */
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 40%;
+  }
+
+  /* line 33, sass/_bootstrap-mobile-navigation.sass */
+  .btn[data-toggle=offcanvas] {
+    background: #efe6dd;
+    color: #210c08;
+    border-color: #7ebdc2;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 40, sass/_bootstrap-mobile-navigation.sass */
+  .navbar-master .navbar-brand {
+    clear: both;
+    float: none;
+  }
+}
+/* line 44, sass/_bootstrap-mobile-navigation.sass */
+.row-offcanvas-right {
+  right: 0;
+}
+/* line 46, sass/_bootstrap-mobile-navigation.sass */
+.row-offcanvas-right .sticky {
+  left: auto;
+  right: 0;
+  padding: 0 15px 0 0;
+}
+@media screen and (max-width: 767px) {
+  /* line 46, sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right .sticky {
+    right: -50%;
+  }
+}
+
+/* line 52, sass/_bootstrap-mobile-navigation.sass */
+.mobile-button-wrap {
+  margin-top: -0.9rem;
+  margin-bottom: 0;
+}
+
+/* line 1, sass/_animation.sass */
+.sidebar-offcanvas {
+  transition: right 2s;
+}
+
+@-webkit-keyframes target {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #7ebdc2;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@-moz-keyframes target {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #7ebdc2;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@-ms-keyframes target {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #7ebdc2;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@-o-keyframes target {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #7ebdc2;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes target {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #7ebdc2;
+  }
+  100% {
+    background: transparent;
+  }
+}
+/* line 12, sass/_animation.sass */
+article:target,
+article.js-targeted {
+  -webkit-animation: target 1s 1 linear;
+  -moz-animation: target 1s 1 linear;
+  -ms-animation: target 1s 1 linear;
+  -o-animation: target 1s 1 linear;
+  animation: target 1s 1 linear;
+}

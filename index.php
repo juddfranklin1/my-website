@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Source+Serif+Pro" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/app.css">
+    <?php echo file_get_contents(__DIR__.'/css/current-stylesheet.html'); ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- google fonts -->
@@ -243,14 +243,15 @@
         </div>
       </div>
     </footer>
+    <div id="test-content"></div>
     <div id="eventful-root"></div>
-    <script type="text/javascript" src="dist/index_bundle.js"></script></body>
     <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script><!-- Tether used for absolutely positioned elements -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script> -->
-    <script src="js/bootstrap-4.0.0-alpha.6.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js" type="text/javascript"></script><!-- Tether used for absolutely positioned elements -->
+    <script src="js/bootstrap-4.0.0-alpha.6.js" type="text/javascript"></script>
 
-    <script src="js/app.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="eventful/eventful-widget/dist/index_bundle.js" type="text/javascript"></script>
+    <div id="eventful-root"></div>
   </body>
 </html>

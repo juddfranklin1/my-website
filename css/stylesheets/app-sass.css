@@ -1,0 +1,265 @@
+/* Coolors Exported Palette - coolors.co/bb4430-7ebdc2-f3dfa2-efe6dd-4e0110 */
+/* HSL */
+/* RGB */
+/* line 1, ../sass/_bootstrap-overrides.sass */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* line 4, ../sass/_bootstrap-overrides.sass */
+body {
+  height: 100%;
+  padding-top: 3rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin: 0 auto;
+  position: relative;
+  color: #210c08;
+  background: #fcfff4;
+  background: -moz-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -webkit-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(135deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 );
+}
+/* line 19, ../sass/_bootstrap-overrides.sass */
+body a {
+  color: #7ebdc2;
+}
+
+/* line 22, ../sass/_bootstrap-overrides.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 1em;
+}
+
+/* line 26, ../sass/_bootstrap-overrides.sass */
+h5 {
+  line-height: 1.5em;
+}
+
+/* line 29, ../sass/_bootstrap-overrides.sass */
+nav.navbar.navbar-master {
+  background: #4e0110;
+  min-height: 3rem;
+}
+/* line 32, ../sass/_bootstrap-overrides.sass */
+nav.navbar.navbar-master a {
+  color: #efe6dd;
+}
+/* line 34, ../sass/_bootstrap-overrides.sass */
+nav.navbar.navbar-master .navbar-brand {
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.3em;
+}
+
+/* line 38, ../sass/_bootstrap-overrides.sass */
+.banner-block {
+  padding: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  background: radial-gradient(ellipse at center, rgba(150, 1, 16, 0.65) 0%, rgba(78, 1, 16, 0) 100%), url(../img/a-silhouette-at-sunset-wide.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (min-width: 1025px) {
+  /* line 38, ../sass/_bootstrap-overrides.sass */
+  .banner-block {
+    padding: 12rem;
+  }
+}
+
+/* line 51, ../sass/_bootstrap-overrides.sass */
+.main-section {
+  margin-top: 30px;
+}
+
+/* line 54, ../sass/_bootstrap-overrides.sass */
+.main-content-column {
+  position: relative;
+  overflow: auto;
+}
+
+/* line 59, ../sass/_bootstrap-overrides.sass */
+#skills-nav {
+  border-top: 1px solid #f3dfa2;
+}
+/* line 61, ../sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item {
+  border: 1px solid #f3dfa2;
+  border-top: 0;
+  border-radius: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #7ebdc2;
+}
+/* line 67, ../sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item.active, #skills-nav .nav-item.active:focus, #skills-nav .nav-item.active:hover {
+  background-color: #210c08;
+  border-color: #f3dfa2;
+}
+/* line 70, ../sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item.active a, #skills-nav .nav-item.active:focus a, #skills-nav .nav-item.active:hover a {
+  color: #efe6dd;
+}
+/* line 72, ../sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item a {
+  padding: 15px;
+  display: block;
+}
+/* line 75, ../sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item .active {
+  background-color: #210c08;
+  color: #efe6dd;
+}
+/* line 78, ../sass/_bootstrap-overrides.sass */
+#skills-nav .nav-item .active:hover {
+  border-color: #210c08;
+}
+
+/* line 83, ../sass/_bootstrap-overrides.sass */
+footer {
+  padding: 30px 0;
+  background: #4e0110;
+  color: #efe6dd;
+}
+/* line 87, ../sass/_bootstrap-overrides.sass */
+footer p {
+  margin-bottom: 0;
+}
+
+/* line 91, ../sass/_bootstrap-overrides.sass */
+article {
+  padding-bottom: 4rem;
+  border-bottom: 1px dashed #f3dfa2;
+}
+
+/* line 95, ../sass/_bootstrap-overrides.sass */
+.anchor-wrapper {
+  padding-top: 4rem;
+}
+@media screen and (max-width: 768px) {
+  /* line 95, ../sass/_bootstrap-overrides.sass */
+  .anchor-wrapper {
+    padding-top: 8rem;
+  }
+}
+
+/* line 100, ../sass/_bootstrap-overrides.sass */
+article#overview .anchor-wrapper {
+  padding-top: 0;
+}
+
+/* line 103, ../sass/_bootstrap-overrides.sass */
+#contact article {
+  border-bottom: 0;
+}
+
+/* line 107, ../sass/_bootstrap-overrides.sass */
+.sticky {
+  position: fixed;
+  top: 6rem;
+}
+
+/* line 111, ../sass/_bootstrap-overrides.sass */
+.card-content li {
+  list-style-type: none;
+  padding: 0.3rem 0;
+}
+
+/* line 115, ../sass/_bootstrap-overrides.sass */
+[class^="devicon-"]:before {
+  font-size: 2rem;
+  color: #7ebdc2;
+  line-height: 2rem;
+  vertical-align: middle;
+}
+
+/* Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  /* line 6, ../sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  /* line 12, ../sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right {
+    right: 0;
+  }
+  /* line 15, ../sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right.active .sticky {
+    position: fixed;
+    right: 0;
+    top: 7rem;
+    padding: 0 0 0 0;
+  }
+
+  /* line 21, ../sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%;
+    top: 0;
+    margin: 0 15px 0 0;
+  }
+
+  /* line 25, ../sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right.active {
+    right: 50%;
+  }
+
+  /* line 28, ../sass/_bootstrap-mobile-navigation.sass */
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 40%;
+  }
+
+  /* line 33, ../sass/_bootstrap-mobile-navigation.sass */
+  .btn[data-toggle=offcanvas] {
+    background: #efe6dd;
+    color: #210c08;
+    border-color: #7ebdc2;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* line 40, ../sass/_bootstrap-mobile-navigation.sass */
+  .navbar-master .navbar-brand {
+    clear: both;
+    float: none;
+  }
+}
+/* line 44, ../sass/_bootstrap-mobile-navigation.sass */
+.row-offcanvas-right {
+  right: 0;
+}
+/* line 46, ../sass/_bootstrap-mobile-navigation.sass */
+.row-offcanvas-right .sticky {
+  left: auto;
+  right: 0;
+  padding: 0 15px 0 0;
+}
+@media screen and (max-width: 767px) {
+  /* line 46, ../sass/_bootstrap-mobile-navigation.sass */
+  .row-offcanvas-right .sticky {
+    right: -50%;
+  }
+}
+
+/* line 52, ../sass/_bootstrap-mobile-navigation.sass */
+.mobile-button-wrap {
+  margin-top: -0.9rem;
+  margin-bottom: 0;
+}
+
+/* line 2, ../sass/_animation.sass */
+.sidebar-offcanvas {
+  transition: right 2s;
+}
