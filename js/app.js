@@ -1,6 +1,5 @@
 function animationSpeedByDistance (currentOffset,destinationOffset){
-  var speed = Math.abs(currentOffset-destinationOffset) < 1000 ? 2000: 3000;
-  return speed
+  return Math.abs(currentOffset-destinationOffset) < 1000 ? 1200: 2400;
 }
 
 $(document).ready(function () {
@@ -24,7 +23,7 @@ $(document).ready(function () {
     var currentOffset = $(window).scrollTop();
 
     $('html,body').animate({
-      scrollTop: $("#"+destination).offset().top - 30
+      scrollTop: $("#"+destination).offset().top - 60
     }, animationSpeedByDistance(currentOffset,destinationOffset),'swing',function(){
         $('article').removeClass('js-targeted');
         $('article#' + destination).addClass('js-targeted');
