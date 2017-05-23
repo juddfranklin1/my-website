@@ -64,6 +64,14 @@ nav.navbar.navbar-master
 
 // List Styles
 #skills-nav
+  @media screen and (min-width: 768px)
+    width: 100%
+    .nav-item
+      display: inline-block
+      border-top: 0
+      top: -46px
+    
+  
   border-top: 1px solid $color3
   .nav-item
     border: 1px solid $color3
@@ -71,6 +79,7 @@ nav.navbar.navbar-master
     border-radius: 0
     padding: 0
     background-color: #fff
+    width: 100%
     &.active, &.active:focus, &.active:hover
       background-color: $color1
       border-color: $color3
@@ -97,14 +106,18 @@ footer
 // Section Styles
 article
   padding: 0 15px 4rem
-  border-bottom: 1px dashed $color3
   box-shadow: 0px 0px 7px
   margin: 5px 0 20px
+  background: $color4
 
 .anchor-wrapper
   padding-top: 3em
   @media screen and (max-width: 768px)
     padding-top: 8rem
+  > h2, > h3, > p
+    padding: 0 1.25rem
+  blockquote
+    margin: 3rem 0 0 
 
 article#overview .anchor-wrapper
   padding-top: 0
@@ -117,12 +130,18 @@ article#overview .anchor-wrapper
   position: fixed
   top: 6rem
 
-.card-content li
-  list-style-type: none
-  padding: .3rem 0
+.card-content
+  padding-left: 0
+  li
+    list-style-type: none
+    padding: .3rem 0
 
 .devicons:before
   font-size: 2rem
   color: $color2
   line-height: 2rem
   vertical-align: middle
+.devicons.no-icon:before
+  width: 2rem
+  display: inline-block
+  content: ''

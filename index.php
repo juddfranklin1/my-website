@@ -251,7 +251,7 @@
     <script src="js/bootstrap-4.0.0-alpha.6.js" type="text/javascript"></script>
 
     <script src="js/app.js" type="text/javascript"></script>
-    <script src="eventful/eventful-widget/dist/index_bundle.js" type="text/javascript"></script>
+    <!--script src="eventful/eventful-widget/dist/index_bundle.js" type="text/javascript"></script-->
     <div id="eventful-root"></div>
   </body>
 </html>

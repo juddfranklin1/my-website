@@ -43,7 +43,7 @@ $(window).scroll(function () {
 var handleScroll = function(){
   /* potentially use this https://github.com/leafo/sticky-kit/issues */
   var topOffset = $('#top').offset();
-  if ($(window).scrollTop() > $('.banner-block').outerHeight() + 30){
+  if ($(window).scrollTop() > $('.banner-block').outerHeight() + 230){
     /* Toggle on "transition" class
      * animate via css3 transitions
      * then callback that toggles "transition" off and "sticky" on.
