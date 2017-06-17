@@ -37,7 +37,7 @@ $(window).scroll(function () {
     if (scrollTimer) {
         clearTimeout(scrollTimer);   // clear any previous pending timer
     }
-    scrollTimer = setTimeout(handleScroll, 25);   // set new timer
+    scrollTimer = setTimeout(handleScroll, 5);   // set new timer
 });
 
 var handleScroll = function(){
