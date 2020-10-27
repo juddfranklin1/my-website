@@ -12,3 +12,15 @@
 article:target,
 article.js-targeted
   +animation('target 1s 1 linear')
+
++keyframes('stretch')
+  0%
+    transform: scale3d(1,1,1)
+  50%
+    transform: scale3d(1.5,1.5,1.5)
+  100%
+    transform: scale3d(2,2,2)
+
+.icons .icon:hover
+  +animation('stretch 1s 1 linear')
+  transform: scale3d(2,2,2)

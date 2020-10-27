@@ -29,6 +29,9 @@ h1,h2,h3,h4,h5,h6
 h3
   line-height: 2.5rem
   font-size: 1.4rem
+h4
+  line-height: 2rem
+  font-size: 1.15rem
 
 h5
   line-height: 1.5rem
@@ -136,12 +139,13 @@ article#overview .anchor-wrapper
     list-style-type: none
     padding: .3rem 0
 
-.devicons:before
-  font-size: 2rem
-  color: $color2
-  line-height: 2rem
-  vertical-align: middle
-.devicons.no-icon:before
-  width: 2rem
-  display: inline-block
-  content: ''
+.icons
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    svg,.icon
+        width: 30px
+        height: 30px
+        &::hover
+            width: 40px
+            transform: scale(1.3)

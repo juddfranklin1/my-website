@@ -1,0 +1,179 @@
+/* Coolors Exported Palette - coolors.co/bb4430-7ebdc2-f3dfa2-efe6dd-4e0110 */
+/* HSL */
+/* RGB */
+html,
+body {
+  overflow-x: hidden;
+}
+
+html body {
+  height: 100%;
+  padding-top: 3rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin: 0 auto;
+  position: relative;
+  color: #210c08;
+  background: #fcfff4;
+  background: -moz-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -webkit-linear-gradient(-45deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(135deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fcfff4", endColorstr="#b3bead",GradientType=1 );
+}
+html body a {
+  color: #7ebdc2;
+}
+html body a.alt-link {
+  color: #4e0110;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+
+h4 {
+  line-height: 2rem;
+  font-size: 1.15rem;
+}
+
+h5 {
+  line-height: 1.5rem;
+}
+
+nav.navbar.navbar-master {
+  background: #4e0110;
+  min-height: 3rem;
+}
+nav.navbar.navbar-master a {
+  color: #efe6dd;
+}
+nav.navbar.navbar-master .navbar-brand {
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.3em;
+}
+
+.banner-block {
+  padding: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  background: radial-gradient(ellipse at center, rgba(150, 1, 16, 0.65) 0%, rgba(78, 1, 16, 0) 100%), url(../img/a-silhouette-at-sunset-wide.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (min-width: 1025px) {
+  .banner-block {
+    padding: 12rem;
+  }
+}
+
+.main-section {
+  margin-top: 30px;
+}
+
+.main-content-column {
+  position: relative;
+  overflow: auto;
+}
+
+#skills-nav {
+  border-top: 1px solid #f3dfa2;
+}
+@media screen and (min-width: 768px) {
+  #skills-nav {
+    width: 100%;
+  }
+  #skills-nav .nav-item {
+    display: inline-block;
+    border-top: 0;
+    top: -46px;
+  }
+}
+#skills-nav .nav-item {
+  border: 1px solid #f3dfa2;
+  border-top: 0;
+  border-radius: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  color: #7ebdc2;
+}
+#skills-nav .nav-item.active, #skills-nav .nav-item.active:focus, #skills-nav .nav-item.active:hover {
+  background-color: #210c08;
+  border-color: #f3dfa2;
+}
+#skills-nav .nav-item.active a, #skills-nav .nav-item.active:focus a, #skills-nav .nav-item.active:hover a {
+  color: #efe6dd;
+}
+#skills-nav .nav-item a {
+  padding: 15px;
+  display: block;
+}
+#skills-nav .nav-item .active {
+  background-color: #210c08;
+  color: #efe6dd;
+}
+#skills-nav .nav-item .active:hover {
+  border-color: #210c08;
+}
+
+footer {
+  padding: 30px 0;
+  background: #4e0110;
+  color: #efe6dd;
+}
+footer p {
+  margin-bottom: 0;
+}
+
+article {
+  padding: 0 15px 4rem;
+  box-shadow: 0px 0px 7px;
+  margin: 5px 0 20px;
+  background: #efe6dd;
+}
+
+.anchor-wrapper {
+  padding-top: 3em;
+}
+@media screen and (max-width: 768px) {
+  .anchor-wrapper {
+    padding-top: 8rem;
+  }
+}
+.anchor-wrapper > h2, .anchor-wrapper > h3, .anchor-wrapper > p {
+  padding: 0 1.25rem;
+}
+.anchor-wrapper blockquote {
+  margin: 3rem 0 0;
+}
+
+article#overview .anchor-wrapper {
+  padding-top: 0;
+}
+
+#contact article {
+  border-bottom: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 6rem;
+}
+
+.card-content {
+  padding-left: 0;
+}
+.card-content li {
+  list-style-type: none;
+  padding: 0.3rem 0;
+}
