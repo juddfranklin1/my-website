@@ -14,4 +14,28 @@
 		> .label {
 			display: none;
 		}
+		.cls-1{
+			fill:#8ed6fb;
+		}
+		.cls-2{
+			fill:#1c78c0;
+		}
+	}
+	.icons {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		svg,.icon {
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+			transition: .5s all ease-in-out;
+			z-index: 10;
+			&:hover {
+				width: 40px;
+				transform: scale(2);
+				z-index: 100;
+			}
+		}
 	}

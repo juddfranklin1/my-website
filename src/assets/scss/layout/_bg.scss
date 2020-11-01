@@ -54,7 +54,12 @@
         'filter #{_duration(article)} ease-in-out'
       )
     );
-    background-image: url('../../images/bg.jpg');
+    background-image: radial-gradient(
+      ellipse at center,
+      rgba(150, 1, 16, 0.65) 0%,
+      rgba(78, 1, 16, 0) 100%
+    ),
+    url('../../images/a-silhouette-at-sunset-wide.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

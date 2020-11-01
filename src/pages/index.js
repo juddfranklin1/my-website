@@ -1,4 +1,8 @@
 import React from 'react'
+
+import { graphql } from 'gatsby'
+import get from 'lodash/get'
+
 import Layout from '../components/layout'
 
 import Header from '../components/Header'
@@ -40,7 +44,6 @@ class IndexPage extends React.Component {
   }
 
   handleOpenArticle(article) {
-
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
       article
@@ -90,12 +93,18 @@ class IndexPage extends React.Component {
   }
 
   render() {
+    const workSections = get(this, 'props.data.allContentfulWorkSection.edges')
+
     return (
       <Layout location={this.props.location}>
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
-            <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+            <Header
+              onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout}
+              workSections={ workSections }  
+            />
             <Main
+              workSections={ workSections }
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
@@ -113,3 +122,24 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage
+
+
+export const pageQuery = graphql`
+  query HomeQuery {
+    allContentfulWorkSection {
+      edges {
+        node {
+          slug
+          headline
+          subheadline
+          content {
+            json
+          }
+          exampleWork {
+            json
+          }
+        }
+      }
+    }
+  }
+`
