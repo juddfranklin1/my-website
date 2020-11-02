@@ -52,6 +52,7 @@ class Main extends React.Component {
           <p>I love the view from mountain passes, and I love the view from New York high-rises. I have studied fiction-writing, lichens, media industries, cinema, and geopolitics, to name a few of my favorite subjects.</p>
           <p>Some of my favorite parts of the world are Fjordlands, New Zealand; Moorea, Tahiti; the Eastern Sierra Nevada, California; Florence, Italy; Dodgers Stadium; Jerusalem.</p>
           <p>Now, I live in Carmel, CA with my wife and 2 mind-breakingly amazing kids.</p>
+          <p>Find out more about my professional background at <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/judd-franklin/">linkedin</a></p>
           <h4 className="mt-2 pl-1">Some of my favorite tech:</h4>
           <p className="icons">
             <span className="pr-1">

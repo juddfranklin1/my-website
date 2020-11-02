@@ -13,7 +13,7 @@ class Header extends React.Component {
           <div className="inner">
             <h1>Judd Franklin: Code is for people, not computers.</h1>
             <p>
-            I firmly believe that the satisfaction of people must be the driving purpose behind engineering. From this belief I have built a career of serving all stakeholders in websites. My work produces satisfaction for the site owners, end users, and my colleagues.
+              Engineers should aim to satisfy people, not computers. From this belief, I have built a career producing satisfaction for site owners, end users, and my colleagues.
             </p>
           </div>
         </div>

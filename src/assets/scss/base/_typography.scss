@@ -18,7 +18,7 @@
 		}
 
 		@include breakpoint(xxsmall) {
-			font-size: 10pt;
+			font-size: 16pt;
 		}
 	}
 
@@ -56,6 +56,13 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
+		
+		@include breakpoint(medium) {
+			font-size: 1.2rem;
+		}
+		@include breakpoint(small) {
+			font-size: 1.4rem;
+		}
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -96,6 +103,14 @@
 
 	h3 {
 		font-size: 1rem;
+		
+		@include breakpoint(small) {
+			font-size: 1.5rem;
+		}
+
+		@include breakpoint(xxsmall) {
+			font-size: 1.2rem;
+		}
 	}
 
 	h4 {

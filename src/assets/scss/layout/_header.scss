@@ -107,6 +107,13 @@
       letter-spacing: _font(letter-spacing);
       font-size: 0.8rem;
       line-height: 2;
+      @include breakpoint(medium) {
+        font-size: 1.2rem;
+      }
+      @include breakpoint(small) {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+      }
     }
   }
 
