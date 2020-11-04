@@ -6,3 +6,5 @@ It contains more than a few "experimental" features. I have left it here to refl
 The active branch of this repository is *dev-gatsby*. This branch, as it's name suggests, is a Gatsby-driven static site. The content management of that site is handled by Contentful.
 
 Eventually, the site will house my blog, some more concrete code samples, etc.
+
+In the meantime, I am clearing out some of the old and useless remnants on this site. Check back here for updates that reflect a bit more of what I have.
