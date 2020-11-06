@@ -42,16 +42,6 @@
     position: relative;
     margin-top: 3.5rem;
 
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: calc(-3.5rem - 1px);
-      left: calc(50% - #{_size(border-width) * 1});
-      width: _size(border-width);
-      height: calc(3.5rem + 1px);
-      background: _palette(border);
-    }
   }
 
   > :first-child {
@@ -68,6 +58,14 @@
     line-height: 5.5rem;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
+    background: _palette(border);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 3.75rem;
+    }
 
     .icon {
       &:before {
@@ -78,7 +76,7 @@
 
   .content {
     border-style: solid;
-    border-color: _palette(border);
+    border-color: _palette(bg);
     border-top-width: _size(border-width);
     border-bottom-width: _size(border-width);
     max-width: 100%;
@@ -95,6 +93,7 @@
       @include vendor('transition-delay', '0.25s');
       padding: 3rem 2rem;
       max-height: 40rem;
+      max-width: 1040px;
       overflow: hidden;
 
       > :last-child {
@@ -123,7 +122,6 @@
       margin-bottom: 0;
       list-style: none;
       padding-left: 0;
-      border: solid _size(border-width) _palette(border);
       border-radius: _size(border-radius);
 
       li {
@@ -229,6 +227,10 @@
       width: 4.75rem;
       height: 4.75rem;
       line-height: 4.75rem;
+      overflow: hidden;
+      img {
+        width: 3rem;
+      }
 
       .icon {
         &:before {
