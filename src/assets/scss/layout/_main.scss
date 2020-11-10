@@ -75,16 +75,8 @@
 					background-repeat: no-repeat;
 				}
 
-				&:hover {
-					&:before {
-						background-color: _palette(border-bg);
-					}
-				}
-
 				&:active {
-					&:before {
-						background-color: _palette(border-bg-alt);
-					}
+					background-color: _palette(border-bg-alt);
 				}
 			}
 
