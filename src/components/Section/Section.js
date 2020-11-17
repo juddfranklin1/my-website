@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types'
 import React from 'react'
-import ExampleWork from './ExampleWork'
+import ExampleWork from '../ExampleWork/'
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 class Section extends React.Component {

@@ -20,6 +20,14 @@
   margin-top: 2rem;
   text-align: center;
 
+  .covid_data {
+    font-size: 0.8rem;
+    opacity: 0.75;
+    b {
+      opacity: 1;
+    }
+  }
+
   .copyright {
     letter-spacing: _font(letter-spacing);
     font-size: 0.6rem;
