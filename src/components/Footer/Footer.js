@@ -6,6 +6,7 @@ import moment from 'moment';
 const currentDate = moment();
 const currentYear = currentDate.year();
 const prevDay = moment().subtract(2, 'days');
+const yesterday = moment().subtract(1, 'day');
 
 const Footer = function(props) {
     const [appState, setAppState] = useState({
@@ -14,12 +15,12 @@ const Footer = function(props) {
     });
 
     useEffect(() => {
-        const covidDataUrl = 'https://api.covid19api.com/total/country/united-states/status/confirmed';
+        const covidDataUrl = 'https://api.covid19api.com/total/country/united-states/status/confirmed?from=' + prevDay.format('YYYY-MM-DD') + 'T00:00:00Z&to=' + yesterday.format('YYYY-MM-DD') + 'T00:00:00Z';
         fetch(covidDataUrl)
           .then(response => response.json())
           .then(function(data) {
                 let todayCases = data.filter(dataObj => {
-                    return moment(dataObj.Date).dayOfYear() === prevDay.dayOfYear();
+                    return dataObj.Date === yesterday.format('YYYY-MM-DD') + 'T00:00:00Z';
                 });
                 todayCases = todayCases.length === 0 ? todayCases : todayCases[0];
             setAppState({ loading: false, covidData: todayCases });
@@ -32,7 +33,7 @@ const Footer = function(props) {
         { appState.covidData && appState.covidData.Cases && (
         <p className="covid_data">
             <small>
-            Total confirmed US Covid Cases as of { moment(appState.covidData.Date).format('dddd, MMMM Do YYYY, h:mm:ss a') }: <b>{ appState.covidData.Cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }</b>.<br />
+            Total confirmed US Covid Cases as of { moment(appState.covidData.Date.substr(0,10)).format('dddd, MMMM Do YYYY') }: <b>{ appState.covidData.Cases.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }</b>.<br />
             Data Provided by <a href="https://covid19api.com/">COVID 19 API</a>
             </small>
         </p>

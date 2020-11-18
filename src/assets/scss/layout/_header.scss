@@ -149,9 +149,10 @@
             font-size: 1.2rem;
           }
           @include breakpoint(small) {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             line-height: 1.6rem;
             height: 3.25rem;
+            width: 100%;
           }
 
           &:hover,
