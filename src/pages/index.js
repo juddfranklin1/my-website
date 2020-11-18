@@ -73,7 +73,7 @@ class IndexPage extends React.Component {
 
     setTimeout(() => {
       this.setState({
-        timeout: !this.state.timeout
+        timeout: false
       })
     }, 325)
 

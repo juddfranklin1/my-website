@@ -2,49 +2,35 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import ExampleWork from '../ExampleWork/'
+import CloseButton from '../CloseButton/'
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-class Section extends React.Component {
-  render() {
-    let close = (
-      <button
-        className="close"
-        tabIndex={ 0 }
-        onClick={(e) => {
-          e.preventDefault();
-          this.props.onCloseArticle()
-        }}
-        onKeyPress={(e) => {
-          if(e.key === 'Enter') {
-            this.props.onCloseArticle()
-          }
-        }}
-      >close</button>
-    )
+const Section = props => {
+  const content = documentToReactComponents(props.content.json)
 
-    const content = documentToReactComponents(this.props.content.json)
-
-    return (
-        <article
-          id={ this.props.name }
-          className={`${this.props.article === this.props.name ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">{ this.props.title }</h2>
-          <h3>{ this.props.subtitle }</h3>
-          <span className="image main">
-            <img src={this.props.pic} alt="" />
-          </span>
-          { content }
-          <ExampleWork
-            text={ documentToReactComponents(this.props.exampleWork.json) }
-          ></ExampleWork>
-          {close}
-        </article>
-    )
-  }
+  return (
+      <article
+        role="dialog"
+        aria-labelledby={'heading-' + props.name}
+        aria-describedby={'subheading-' + props.name}
+        id={ props.name }
+        className={`${props.article === props.name ? 'active' : ''} ${
+          props.articleTimeout ? 'timeout' : ''
+        }`}
+        style={{ display: 'none' }}
+      >
+        <h2 id={'heading-' + props.name} className="major">{ props.title }</h2>
+        <h3 id={'subheading-' + props.name}>{ props.subtitle }</h3>
+        { content }
+        <ExampleWork
+          text={ documentToReactComponents(props.exampleWork.json) }
+        ></ExampleWork>
+        
+        <CloseButton
+          onCloseArticle={ props.onCloseArticle }
+        ></CloseButton>
+      </article>
+  )
 }
 
 Section.propTypes = {

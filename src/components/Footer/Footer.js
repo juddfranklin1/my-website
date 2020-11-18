@@ -37,7 +37,7 @@ const Footer = function(props) {
             </small>
         </p>
         ) }
-        <p className="copyright">&copy; <span className="copyright-year">{currentYear}</span> Judd Franklin; Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a> using Dimension Starter. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        <p role="contentinfo" className="copyright">&copy; <span className="copyright-year">{currentYear}</span> Judd Franklin; Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a> using Dimension Starter. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
     </footer>
     )
 }

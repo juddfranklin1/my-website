@@ -5,17 +5,17 @@ import logo from '../../images/judd-logo.png'
 const Header = (props) => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <img src={logo} alt="Judd Franklin" />
+      <img src={logo} alt="Judd Franklin Personal Logo" />
     </div>
     <div className="content">
-      <div className="inner">
+      <div className="inner" role="banner">
         <h1>Judd Franklin: Code is for people, not computers.</h1>
         <p>
           Engineers should aim to satisfy people, not computers. From this belief, I have built a career producing satisfaction for site owners, end users, and my colleagues.
         </p>
       </div>
     </div>
-    <nav>
+    <nav role="navigation">
       <ul>
         { props.workSections.map((sect, ind) => (
           <li key={ 'section-navigation-' + ind }>

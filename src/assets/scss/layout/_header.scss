@@ -145,6 +145,14 @@
           border: none;
           box-shadow: none;
           margin: auto;
+          @include breakpoint(medium) {
+            font-size: 1.2rem;
+          }
+          @include breakpoint(small) {
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            height: 3.25rem;
+          }
 
           &:hover,
           &:focus {
